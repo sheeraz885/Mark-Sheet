@@ -21,35 +21,28 @@ function subjectsScore() {
 function calculatePercenatge(subjects){
   let obtain_marks = subjects[0]+subjects[1]+subjects[2]+subjects[3]+subjects[4];
    let res = obtain_marks/500*100;
-   let res1 = res.toFixed(2);
-    return res1;;
+    return res.toFixed(2);
 
 }
 
 function calc_percentage(per){
   if(per>90 && per<101){
-   let a1 = "A+";
-   return a1;
+   return "A+";
 
   }else if(per>80 && per<91){
-    let a = "A" ;
-      return a;
+    return "A";
 
-  } else if(per>70 && per<71){
-    let b = "B";
-      return b;
+  } else if(per>70 && per<81){
+    return "B";
 
-  } else if(per>60 && per<61){
-    let c ="C";
-    return c;
+  } else if(per>60 && per<71){
+    return "C";
  
-} else if(per>50 && per<51){
-    let d ="D";
-    return d;
+} else if(per>50 && per<61){
+    return "D";
 
 }else{
-   let f = "fail";
-   return f;
+   return "F";
 
 }
 }
@@ -133,15 +126,14 @@ totalRow.appendChild(totalMaxCell);
 table.appendChild(totalRow);
 
 let perrRow = document.createElement("tr");
-totalRow.setAttribute("class", "tr");
+perrRow.setAttribute("class", "tr");
 
 perCol = document.createElement("td");
 perCol.setAttribute("id", "tr")
-perCol.innerText = "Per : " +per + "%";
+perCol.innerText = "Per : " +per+ "%";
 
 let gradeRow = document.createElement("td");
 gradeRow.setAttribute("id", "tr");
-gradeRow.style.row
 gradeRow.innerText = "Grade : "+ grade;
 
 perrRow.appendChild(perCol);
