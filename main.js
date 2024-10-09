@@ -4,8 +4,8 @@ function subjectsScore() {
     let english = prompt("Enter Your English Subject Marks: ");
     let math = prompt("Enter Your Math Subject Marks: ");
     let science = prompt("Enter Your Science Subject Marks: ");
-    let physics = prompt("Enter Your Math Subject Marks: ");
-    let chemisty = prompt("Enter Your Science Subject Marks: ");
+    let physics = prompt("Enter Your Physics Subject Marks: ");
+    let chemisty = prompt("Enter Your Chemistry Subject Marks: ");
 
     let marksArray = [];
     marksArray.push(Number(english)); 
